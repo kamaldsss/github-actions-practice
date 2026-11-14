@@ -14,18 +14,21 @@ jobs:
       run: echo "cloning the code on git  using git clone "
 
   build:
+    needs: [code]
     runs-on: ubuntu-latest
     steps:
     - name: builds on docker
       run: echo " buiilding on docker"
 
   test:
+    needs: [build]
     runs-on: ubuntu-latest 
     steps:
     - name: testing the code
       run: echo "testing the code"
 
   deploy:
+    needs: [test,build  ]
     runs-on: ubuntu 
     steps: 
     - name: deploy the application 
