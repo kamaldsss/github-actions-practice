@@ -1,0 +1,28 @@
+# Workflow
+#shoud have  a name
+name: hello 
+on:
+  workflow_dispatch: 
+
+# Jobs
+# Should be inside workflow 
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      -  name: say-hello to everyone
+         run: echo "Hello Dosto"
+         
+# That ephermal container will have steps to execute  nname those steps  and use run 
+#run has the command 
+
+# Steps
+#should be inside jobs 
+
+
+#Actions
+# Automate the jobs menas like use prebbuild command
+# that inside steps '.github-workflows'
+
