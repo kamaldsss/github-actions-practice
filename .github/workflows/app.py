@@ -19,5 +19,5 @@ def health():
 
 print("hello world")
 print("hello world")
-print("hello World")
+print("hello")
 print("Mai toh theek hu")
