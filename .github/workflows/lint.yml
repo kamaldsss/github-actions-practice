@@ -23,3 +23,6 @@ jobs:
       # this step install the linting tool
       - name: install linter # mainly identifiy the changes if perform then linter check and called actions and they clone the changes like that works 
         run: pip install ruff 
+
+      - name: Run Lint Check
+        run: ruff check .  
