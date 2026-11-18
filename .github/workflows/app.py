@@ -12,6 +12,6 @@ def hello_world():
 @app.route('/health')
 def health():
     return 'Server is up and running'
-print(hello world)
-print(hello world)
+print("hello world")
+print("hello world")
 print("hello World")
