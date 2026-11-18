@@ -1,0 +1,25 @@
+# what is the gpal of your workflow.
+# Goal whereever someone changes the code then lint check the code is correct or not they check syntex format indentation is correct or not. 
+
+
+
+
+name: Auto Lint
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+    # this step clone the code autonatically into the runner of the current branch 
+      - name: checkout/Clone the code
+        uses: actions/checkout@v4 # this are the part of giathub actions automatically clone all the code  
+    
+  # they steps clone the code of current branch into  instide ubuntu latest container or like inside that ubuntu machine 
+# it means clone the code on our runner which is ubuntu and if any chages perform inside this code automatically changer or like clone new code comes in runner 
+
+      # this step install the linting tool
+      - name: install linter # mainly identifiy the changes if perform then linter check and called actions and they clone the changes like that works 
+        run: pip install ruff 
