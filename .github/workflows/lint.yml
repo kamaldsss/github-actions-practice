@@ -26,4 +26,6 @@ jobs:
         run: pip install ruff 
 
       - name: Run Lint Check
-        run: ruff check .  
+        run: ruff check .  # This step run the linter 
+        # linter automatic check the syntex format and indentation of code 
+        
