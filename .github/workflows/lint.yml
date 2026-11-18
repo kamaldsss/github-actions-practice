@@ -7,7 +7,7 @@
 name: Auto Lint
 on:
   push:
-    paths: "*.py"
+    - "**/*.py"
 
 jobs:
   code:
