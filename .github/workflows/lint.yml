@@ -17,6 +17,13 @@ jobs:
     # this step clone the code autonatically into the runner of the current branch 
       - name: checkout/Clone the code
         uses: actions/checkout@v4 # this are the part of giathub actions automatically clone all the code  
+      
+      # this step to use for install python 
+      - name: set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
     
   # they steps clone the code of current branch into  instide ubuntu latest container or like inside that ubuntu machine 
 # it means clone the code on our runner which is ubuntu and if any chages perform inside this code automatically changer or like clone new code comes in runner 
