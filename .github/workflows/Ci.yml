@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 jobs:
-   - name: build-and-push: 
+    - name: build_and_push
      runs-on: ubuntu-latest
      steps:
        - name: Chekcout code
