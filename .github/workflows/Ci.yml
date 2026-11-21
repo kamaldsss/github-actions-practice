@@ -1,4 +1,4 @@
-#goal Docker
+ #goal Docker
 name: CI
 on:
   push:
